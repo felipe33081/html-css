@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcular media</title>
+</head>
+<body>
+    <h1>CALCULO DE MEDIA DO ALUNO</h1>
+    <form action="cadastro.php" method="GET" oninput="itot.value=(Number(inota1.value)+ Number(inota2.value)+ Number(inota3.value)) / Number(3)">
+    <p><label for="inomealuno">Nome do Aluno</label>
+        <input type="text" name="nomealuno" id="inomealuno"></p>
+    <p><label for="inota1">Nota 1:</label>
+        <input type="number" name="nota1" id="inota1"></p>
+    <p><label for="inota2">Nota 2:</label>
+        <input type="number" name="nota2" id="inota2"></p>
+    <p><label for="inota3">Nota 2:</label>
+        <input type="number" name="nota3" id="inota3"></p>
+    <p><label for="itot">Média do aluno:</label>
+        <output name="tot" id="itot">0</output></p>
+    <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Starvingartist-Antiseptic-Videogame-Sony-playstation.ico" type="image/x-icon">
+    <title>imagens</title>
+</head>
+<body>
+    <h1>Testando imagens Flexíveis</h1>
+    <p>Para esse exemplo, criamos as
+        três imagens ao lado: a menor
+        tem 300 x 300px, a média tem<br>
+        700 x 700px e a maior tem 1000
+        x 1000px. Usamos o programa
+        GIMP, que é um editor de<br>
+        imagens 100% gratuito. Essas
+        imagens serão carregadas pelo
+        navegador de acordo com o<br>
+        tamanho da janela atual.
+        </p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="pequena.jpg" type="image/jpg">
+        <source media="(max-width: 800px)" srcset="media.jpg" type="image/jpg">
+        <source media="(max-width: 1100px)" srcset="grande.jpg" type="image/jpg">
+        <img src="grande.jpg" alt="imagens flexiveis">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body1 {
+    background-color: lightgrey;
+}
+#body2 {
+    background-color: lightgreen;
+}
+#body3 {
+    background-color: lightyellow;
+}
+.verde {
+    color: darkgreen;
+}
+.amarelo {
+    color: darkgoldenrod;
+}

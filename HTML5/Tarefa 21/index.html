@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h2>Identificação do Usuário</h2>
+    <form>
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" minlength="4" maxlength="8" size="8" placeholder="00000000"></p>
+        <p><label for="iemail">Email:</label>
+            <input type="email" name="mail" id="iemail" size="30" maxlength="30" placeholder="email@email.com"></p>
+        <p><fieldset style="width: 100px;">
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="isexmasc">
+            <label for="isexmasc">Masculino</label>
+            <input type="radio" name="sex" id="isexfem">
+            <label for="isexfem">Feminino</label>
+        </fieldset>
+        </p>
+        <p>
+            <label for="idata">Data de nascimento</label>
+            <input type="date" name="data" id="idata">
+        </p>
+    </form>
+    <h2>Endereço do Usuário</h2>
+        <form>
+        <p><label for="ilogradouro">Logradouro</label>
+            <input type="text" name="logradouro" id="ilogradouro"></p>
+        <p><label for="inumero">Número:</label>
+            <input type="text" name="numero" id="inumero"></p>
+        <p><label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <option value="">Escolha...</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+            </select></p>
+        <p>
+            <label for="icidade">Cidade:</label>
+            <input type="text" name="cidade" id="icidade">
+        </p>
+        </form>
+        <h2>Mensagem do Usuário</h2>
+        <form>
+        <p><label for="igrau">Grau de Urgência:</label>
+            <input type="range" name="grau" id="igrau" minlength="1" maxlength="5"></p>
+        <p><label for="imensagem">Mensagem</label>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="7"></textarea></p>
+        </form>
+        <h2>Quero um Video-game</h2>
+        <form action="precovideogame.php" method="GET" oninput="ivalor.value=Number(iquant.value)* Number(1300)">
+        <p><label for="ivideogame">Gostaria de adquirir um video-game quando disponível</label>
+            <input type="radio" name="videogame" id="ivideogame"></p>
+        <p><label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor"></p>
+        <p><label for="iquant">Quantidade:</label>
+            <input type="number" name="quant" id="iquant" minlength="1" maxlength="20"></p>
+        <p><label for="ipreco">Preço: R$</label>
+            <output name="preco" id="ipreco">1300</output></p>
+        <p><label for="ivalor">Valor Total: R$</label>
+            <output name="valor" id="ivalor">0</output></p>
+        </form>
+    <form>
+        <p><label for="ienviar">Enviar o formulario</label><input type="submit" name="enviar" id="ienviar"></p>
+    </form>
+</body>
+</html>
